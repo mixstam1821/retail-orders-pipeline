@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+*.log
+
+# generated at runtime, not committed
+sample_data/
+warehouse.duckdb
+dbt_project/target/
+dbt_project/logs/
+dbt_project/dbt_packages/

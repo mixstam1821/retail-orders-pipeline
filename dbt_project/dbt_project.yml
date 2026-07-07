@@ -1,0 +1,22 @@
+name: retail_orders
+version: "1.0.0"
+config-version: 2
+
+profile: retail_orders
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+seed-paths: ["seeds"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  retail_orders:
+    staging:
+      +materialized: view
+      +schema: staging
+    marts:
+      +materialized: table
+      +schema: marts

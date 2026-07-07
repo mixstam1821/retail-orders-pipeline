@@ -1,0 +1,4 @@
+faker==26.0.0
+duckdb==0.10.3
+dbt-core==1.7.13
+dbt-duckdb==1.7.4

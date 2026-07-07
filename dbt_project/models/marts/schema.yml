@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: mart_daily_revenue
+    columns:
+      - name: order_day
+        tests:
+          - unique
+          - not_null
+
+  - name: mart_top_products
+    columns:
+      - name: product_id
+        tests:
+          - unique
+          - not_null
+
+  - name: mart_customer_ltv
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
